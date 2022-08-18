@@ -1,0 +1,842 @@
+/***********************/
+/*HEADER*/
+/***********************/
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: #fdfdfe;*/
+  /* Because we want the header to be sticky later, so we set the height and didn't use padding*/
+  padding: 3rem 4rem 3rem 4rem;
+  position: relative;
+  /*margin-bottom: 8rem;*/
+  background-color: #eaedf4;
+  /*box-shadow: 0 0 0 1px #eaedf4;*/
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  height: 4rem;
+}
+
+/***********************/
+/*NAVIGATION*/
+/***********************/
+
+.main-nav {
+  display: flex;
+  gap: 6rem;
+}
+
+.main-nav-list {
+  gap: 4rem;
+  font-weight: 300;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mid-dot {
+  display: inline-block;
+}
+
+.nav-left--partners {
+  font-size: 2.5rem;
+  color: #a1a2a4;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: 1px solid #88898b;
+  border-radius: 5px;
+  gap: 2rem;
+  transition: all 0.3s;
+}
+
+.search-bar-wrapper:focus-within {
+  box-shadow: 0 1px 0 1px #333;
+}
+
+.search-bar-wrapper input::placeholder {
+  overflow: hidden;
+  color: #c4c4c4;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: #eaedf4;
+}
+
+.search-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: #c4c4c4;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #330e10;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #190708;
+}
+
+.main-nav-links-categories:link,
+.main-nav-links-categories:visited {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.main-nav-links-categories:hover,
+.main-nav-links-categories:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Making sure this always by changing the specificity to (0,3,0) with the "." (and) selector. making this higher than the others */
+.main-nav-links.nav-cta:link,
+.main-nav-links.nav-cta:visited {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "MADE Okine Sans", sans-serif;
+  letter-spacing: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  gap: 8px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #fe4850;
+  /*border-color: #FFD5CD;*/
+  color: #fe4850;
+  background-color: #ffd5cd;
+
+  text-decoration: none;
+}
+
+/***********************/
+/*MOBILE NAV*/
+/***********************/
+
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/***********************/
+/*STICKY NAV*/
+/***********************/
+
+/***********************/
+/*MAIN-CTA SECTION*/
+/***********************/
+
+.main-cta-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 4rem;
+  border-radius: 5000px;
+  /*background-color: #f8f9fc;*/
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.08), 0 -2px 4px rgba(0, 0, 0, 0.12);
+  z-index: 9997;
+  background-color: rgba(248, 249, 252, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  gap: 2rem;
+}
+
+.btn-hero {
+  width: 24rem;
+}
+
+.btn--get-in-touch {
+  display: flex;
+  border: 1px solid #260b0c;
+  color: #f8f9fc;
+  background-color: #260b0c;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
+  gap: 1rem;
+}
+
+.btn--media-kit {
+  border: 1px solid #260b0c;
+  color: #190708;
+  background-color: #f8f9fc;
+}
+
+/***********************/
+/*HERO SECTION*/
+/***********************/
+
+.section-hero {
+  background-image: url("../img/background.png");
+  padding: 2rem 0 8rem 0;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*.section-hero:after {*/
+/*  !*Content required when using :after*!*/
+/*  content: "";*/
+/*  !*background-image: ;*!*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*  opacity: 0.3;*/
+/*  position: absolute;*/
+/*}*/
+
+.grid--hero {
+  grid-template-rows: repeat(4, minmax(min-content, 1fr));
+}
+
+.row1 {
+  background-image: url("../img/logos/rows/row-1.png");
+  -webkit-animation: marquee 75s linear infinite;
+  animation: marquee 75s linear infinite;
+}
+
+.row2 {
+  background-image: url("../img/logos/rows/row-2.png");
+  -webkit-animation: marquee-reverse 75s linear infinite;
+  animation: marquee-reverse 75s linear infinite;
+}
+
+.row3 {
+  background-image: url("../img/logos/rows/row-3.png");
+  -webkit-animation: marquee-reverse 75s linear infinite;
+  animation: marquee-reverse 75s linear infinite;
+}
+
+.row4 {
+  background-image: url("../img/logos/rows/row-4.png");
+  -webkit-animation: marquee 75s linear infinite;
+  animation: marquee 75s linear infinite;
+}
+
+.hero-title {
+  font-size: 16rem;
+  color: #190708;
+  letter-spacing: -0.01em;
+  text-align: center;
+  white-space: nowrap;
+  font-family: "MADE Okine Sans", sans-serif;
+  font-weight: 400;
+  -webkit-text-stroke: 1.11px #260b0c;
+  -webkit-font-smoothing: antialiased;
+  /*text-shadow: -16px 22px 11px #aeaeb0;*/
+}
+
+/* Marquee for hero title */
+
+.marquee-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  transform: translate(0, -50%);
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-35% + var(--offset));
+}
+
+.hero-text-container {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee-text 10s linear infinite;
+  animation-play-state: running;
+}
+
+.marquee-text span {
+  font-size: 16rem;
+  padding: 0 4rem;
+}
+
+/***********************/
+/*FEATURES SECTION*/
+/***********************/
+
+.section-features {
+  background-color: #ecedef;
+}
+
+.grid--features {
+}
+
+.feature-img-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feature-img {
+  max-height: 80rem;
+}
+
+.feature-right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 16rem 4rem 16rem;
+  max-width: 123.75rem;
+}
+
+.feature-headline {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-weight: 400;
+  color: #190708;
+}
+
+.feature-description {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+  color: #190708;
+  padding-bottom: 5rem;
+}
+
+.feature-icons {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.feature-icon {
+  width: 183.5px;
+}
+
+.numbers-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /*padding: 0 0 1rem 0;*/
+  gap: 8rem;
+  width: 100%;
+}
+
+.numbers-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.numbers {
+  font-size: 8rem;
+  font-weight: 500;
+  color: #330e10;
+}
+
+.numbers-description {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/***********************/
+/*MODAL SECTION*/
+/***********************/
+
+.cta-form-container [type="input"] {
+  gap: 2rem;
+}
+
+.cta-form-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 80rem;
+  gap: 4rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.close-icon {
+  height: 4rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 9998;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.cta-form-text {
+  display: flex;
+  flex-direction: column;
+  /*gap: 1rem;*/
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  /*padding: 0 0 0 8rem;*/
+}
+
+.cta-header {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #260b0c;
+}
+
+.cta-description {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+.modal-inputs {
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal-inputs:not(:last-child) {
+  /*margin-bottom: 2rem;*/
+}
+
+.modal-inputs:nth-child(n + 1):nth-child(-n + 3) {
+  font-size: 2rem;
+  padding: 2rem;
+  /*background-color: red;*/
+  border: 1px solid #dfe0e3;
+  border-radius: 5px;
+}
+
+.modal-input-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /*z-index: 9998;*/
+}
+
+.modal-input-forms input::placeholder {
+  color: #4a4b4c;
+}
+
+.cta-cta {
+  max-width: 100%;
+  cursor: pointer;
+  padding: 2rem 0;
+  line-height: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px #fe4850 solid;
+  font-size: 2rem;
+  color: #fe4850;
+  background-color: #ffd5cd;
+  /*margin-bottom: 8rem;*/
+}
+
+/*Dropdown button*/
+
+/* Dropdown Button */
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  color: #555;
+  padding: 2rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #ecedef;
+  border-radius: 5px;
+}
+
+/* Dropdown button on hover & focus */
+/*.dropbtn:hover,*/
+/*.dropbtn:focus {*/
+/*  background-color: #2980b9;*/
+/*}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content--countries li {
+  text-decoration: none;
+  color: #555;
+  /*padding: 2rem 2rem;*/
+}
+
+/*Creating the outer box*/
+
+.tags-header {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #636465;
+
+  display: block;
+
+  margin-top: 1rem;
+}
+
+.tags-container {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+  border: 1px solid #dfe0e3;
+  border-radius: 5px;
+  overflow: hidden;
+
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+
+  z-index: 20;
+
+  border-radius: 500px;
+
+  background-color: #eee;
+
+  /*border: 1px solid #190708;*/
+}
+
+/*label {*/
+/*  !*width: 100%;*!*/
+/*  display: inline-block;*/
+/*  height: auto;*/
+/*}*/
+
+/* ------- CREATING CHECKBOX CUSTOM ----------*/
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+
+  /* To make the entire block clickable */
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #4a4b4c;
+  cursor: pointer;
+}
+
+/*.checkbox label::before {*/
+/*  content: "";*/
+/*  display: inline-block;*/
+
+/*  height: 16px;*/
+/*  width: 16px;*/
+
+/*  border-radius: 3px;*/
+/*  border: 1px solid #555;*/
+/*}*/
+
+/*Creating the checkmark*/
+
+/*.checkbox label::after {*/
+/*  content: "";*/
+/*  display: inline-block;*/
+
+/*  height: 4px;*/
+/*  width: 8px;*/
+
+/*  border-left: 2px solid;*/
+/*  border-bottom: 2px solid;*/
+
+/*  transform: rotate(-45deg);*/
+/*}*/
+
+/*Positioning the outer box and checkmark*/
+
+/*.checkbox label {*/
+/*  position: relative;*/
+/*  left: 32px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.checkbox label::before,*/
+/*.checkbox label::after {*/
+/*  position: absolute;*/
+/*}*/
+
+/*.checkbox label::before {*/
+/*  left: -32px;*/
+/*}*/
+
+/*.checkbox label::after {*/
+/*  left: -28px;*/
+/*  top: 5px;*/
+/*  color: #260b0c;*/
+/*}*/
+
+/*Making the checkmark appear and disappear based on the checkbox state*/
+
+/*!*Hide the checkmark by default*!*/
+/*.checkbox input[type="checkbox"] + label::after {*/
+/*  content: none;*/
+/*}*/
+/*!*Unhide the checkmark on the checked state*!*/
+/*.checkbox input[type="checkbox"]:checked + label::after {*/
+/*  content: "";*/
+/*  color: #fe4850;*/
+/*}*/
+
+/*Adding the focus styles to make the checkbox accessible*/
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+/*.checkbox input[type="checkbox"]:focus + label::before {*/
+/*  outline: #260b0c auto 5px;*/
+/*}*/
+
+input[type="checkbox"]:checked + label {
+  color: #fff;
+}
+
+input[type="checkbox"]:checked + label::before::before {
+  background-color: #fe4850;
+  font-weight: 400;
+}
+
+/* Dropdown Countries Content Container (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+  margin-top: 1rem;
+  box-shadow: 0 0 0 1px #ecedef;
+  z-index: 9996;
+}
+
+.dropdown-content--btns {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin: 24px 32px 16px 24px;
+
+  cursor: default;
+}
+
+.dropdown-content--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn--clr {
+  background-color: transparent;
+  border: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content--countries li {
+  color: #555;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #eee;
+}
+
+/* Links inside the dropdown */
+.dropdown-content--networks li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content--networks li:hover {
+  background-color: #ddd;
+}
+
+button span {
+  pointer-events: none;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+/***********************/
+/*FOOTER*/
+/***********************/
+
+.footer-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: #2e2b1f;
+  padding: 6rem 4rem 18rem 4rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-copyright {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.footer-middle {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: #eee;
+  margin: 0 auto;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-social-icons {
+  gap: 3rem;
+}
+
+.footer-nav {
+  font-family: "MADE Okine Sans", sans-serif;
+  gap: 6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.social-icon {
+  color: #eee;
+}
+
+/*.copyright-socials {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: space-between;*/
+/*}*/

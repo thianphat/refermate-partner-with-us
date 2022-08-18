@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Roobert";
+  src: url(../fonts/roobert/Roobert-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Black.otf)
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Bold.otf)
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Light.otf)
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Medium.otf)
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Regular.otf)
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Okine Sans";
+  src: url(../fonts/made-okine-sans/MADEOkineSansPERSONALUSE-Thin.otf)
+    format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-AirItalic.otf) format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Air.otf) format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Black.otf) format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-BlackItalic.otf) format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-BoldItalic.otf) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-LightItalic.otf) format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-MediumItalic.otf) format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-RegularItalic.otf) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-Thin.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../fonts/aeonik/Aeonik-ThinItalic.otf) format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Guillon";
+  src: url(../fonts/guillon);
+  font-style: normal;
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans Outline";
+  src: url("../fonts/made-okine-sans-outline");
+  font-weight: 100 1000;
+  font-style: normal;
+}

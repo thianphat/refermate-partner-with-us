@@ -1,0 +1,535 @@
+/* Rem and em do NOT depend on HTML font-size in media queries! Instead, 1rem= 1em = 16px  */
+
+/***********************/
+/*BELOW 1344px (Smaller Desktops)*/
+/***********************/
+
+@media (max-width: 84em) {
+  .section-hero {
+    /*max-width: 120rem;*/
+  }
+
+  .hero-title-1,
+  .hero-title-2,
+  .hero-title-3 {
+    /*font-size: 12rem;*/
+  }
+
+  .search-bar-wrapper {
+    display: none;
+  }
+
+  .footer-nav {
+    gap: 3rem;
+  }
+}
+
+/***********************/
+/*BELOW 1240px (Landscape Tablets)*/
+/***********************/
+
+@media (max-width: 77.5em) {
+  .html {
+    /* 9px / 16px = 56.25%*/
+    font-size: 56.25%;
+  }
+
+  .section-hero {
+    /*max-width: 120rem;*/
+  }
+
+  /* Features */
+
+  .feature-right-box {
+    gap: 1rem;
+    padding: 0 12rem;
+  }
+
+  .numbers-boxes {
+    gap: 5rem;
+  }
+
+  .numbers {
+    font-size: 8rem;
+  }
+
+  .feature-headline {
+    font-size: 4rem;
+    line-height: 140%;
+  }
+
+  .feature-description {
+    font-size: 2.5rem;
+  }
+
+  /* Modal */
+
+  .cta-header {
+    font-size: 4rem;
+  }
+
+  .cta-description {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    padding: 6rem 8rem 12rem 8em;
+  }
+}
+
+/***********************/
+/*BELOW 1140px (Small Laptops)*/
+/***********************/
+
+@media (max-width: 71.25em) {
+  /*Features*/
+
+  .grid--features {
+    gap: 4rem;
+  }
+
+  .feature-headline {
+    font-size: 4rem;
+  }
+
+  .feature-description {
+    font-size: 2rem;
+  }
+
+  .feature-right-box {
+    padding: 2rem 0;
+  }
+
+  .numbers-boxes {
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .numbers-box {
+    gap: 1rem;
+    width: 14rem;
+  }
+
+  .numbers {
+    font-size: 5rem;
+  }
+
+  .numbers-description {
+    font-size: 2rem;
+  }
+
+  /*  FOOTER */
+  .footer-nav {
+  }
+
+  /***********************/
+  /*BELOW 1024px (Small Laptops)*/
+  /***********************/
+
+  @media (max-width: 71.25em) {
+    .section-hero {
+      /*height: 60%;*/
+    }
+
+    .feature-img-box {
+      max-width: 70%;
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    .grid--features {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+    }
+
+    .feature-right-box {
+      grid-row: 2;
+      grid-column: 1 / -1;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      margin-bottom: 18rem;
+      text-align: center;
+    }
+
+    .numbers-boxes {
+      width: 100%;
+      padding: 0 1rem;
+      gap: 5rem;
+    }
+
+    .numbers-box {
+      align-items: center;
+      width: 100%;
+    }
+
+    .numbers {
+      font-size: 8rem;
+    }
+
+    .numbers-description {
+      font-size: 2.5rem;
+      line-height: 140%;
+    }
+
+    .feature-headline {
+      margin-bottom: 2rem;
+      font-size: 4.5rem;
+    }
+
+    .feature-description {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    /* Footer */
+
+    .footer-container {
+      padding-bottom: 16rem;
+    }
+
+    .footer-nav {
+      /*padding: 6rem 2rem 10rem 2rem;*/
+      gap: 2rem;
+    }
+  }
+
+  /***********************/
+  /*Between 940px*/
+  /***********************/
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 6rem 18rem 6rem;
+    gap: 4rem;
+    overflow: hidden;
+  }
+
+  /***********************/
+  /*Between 769px (Tablets)*/
+  /***********************/
+
+  @media (max-width: 64em) {
+    /* Top Nav */
+
+    .main-nav-list {
+      display: none;
+    }
+
+    .feature-img-box {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .feature-img {
+      width: 100%;
+    }
+
+    .footer-container {
+      max-width: 100%;
+    }
+  }
+
+  /***********************/
+  /*BELOW 768px (tablets) */ /***********************/
+
+  @media (max-width: 48em) {
+    html {
+      /*    8px / 16px = 0.5 = 50%*/
+      font-size: 50%;
+    }
+
+    /*Features*/
+
+    .feature-img-box {
+      width: 48rem;
+      justify-content: center;
+      /*object-fit: cover;*/
+    }
+
+    .feature-img {
+      object-fit: cover;
+    }
+
+    .feature-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .feature-icon {
+      max-width: 100%;
+    }
+    .feature-headline {
+      font-size: 4.5rem;
+    }
+
+    .feature-description {
+      font-size: 2.5rem;
+    }
+
+    .numbers-boxes {
+      flex-direction: row;
+      width: 100%;
+      padding: 0 1rem;
+      gap: 5rem;
+    }
+
+    .numbers-box {
+      align-items: center;
+      width: 100%;
+    }
+
+    .numbers {
+      font-size: 8rem;
+    }
+
+    .numbers-description {
+      font-size: 2.5rem;
+      line-height: 140%;
+    }
+
+    /*  Footer*/
+    .footer-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /*  Modal */
+
+    .cta-form-container {
+      max-width: 80rem;
+    }
+
+    .modal {
+      padding: 2rem 2rem;
+    }
+
+    .cta-header {
+      font-size: 3rem;
+    }
+
+    .cta-description {
+      font-size: 2rem;
+    }
+
+    .tags-container {
+      overflow-x: visible;
+      flex-wrap: nowrap;
+    }
+
+    .close-modal {
+      margin-bottom: 1rem;
+    }
+  }
+
+  /***********************/ /*Responding to Phones 428px and below/
+  /***********************/
+
+  @media (max-width: 26.75em) {
+    /* Hero */
+    .hero-row {
+      height: 12rem;
+    }
+
+    .marquee-text span {
+      font-size: 8rem;
+    }
+
+    /*MAIN CTA*/
+
+    .main-cta-container {
+      width: 90%;
+      padding: 2rem 2rem;
+      /*border-radius: 5px;*/
+      /*transform: translate(-50%);*/
+    }
+
+    .hero-btns {
+      justify-content: center;
+      /*gap: 2rem;*/
+    }
+
+    .btn-hero {
+      width: fit-content;
+    }
+
+    /*  Features*/
+    .feature-img-box {
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .feature-img {
+      width: 100%;
+    }
+
+    .feature-right-box {
+      max-width: 100%;
+      padding: 0 4rem;
+      margin-bottom: 8rem;
+    }
+
+    .feature-headline {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-description {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+    }
+
+    .numbers-boxes {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .numbers {
+      font-size: 6rem;
+    }
+
+    .numbers-description {
+      font-size: 1.5rem;
+    }
+
+    /*  Footer */
+    .footer-container {
+      padding: 6rem 2rem 10rem 2rem;
+      gap: 6rem;
+    }
+    .footer-middle {
+      /*width: 100%;*/
+      overflow: hidden;
+    }
+
+    .footer-nav {
+      font-size: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*  Modal */
+
+    .modal {
+      /*height: 100%;*/
+      width: 90%;
+      padding: 4rem 2rem;
+      /*overflow: hidden;*/
+    }
+
+    .cta-form-text {
+      /*margin-top: 8rem;*/
+    }
+
+    .cta-header {
+      font-size: 3rem;
+    }
+
+    .cta-description {
+      font-size: 2rem;
+    }
+
+    .cta-form-container {
+      gap: 2rem;
+    }
+  }
+}
+
+/***********************/
+/*Building the Mobile Navigation*/
+/***********************/
+
+/***********************/
+/*Responding to Smaller Tablets* Below 704px/
+/***********************/
+
+/***********************/
+/*Responding to Phones 544px and below/
+/***********************/
+
+/***********************/
+/*Fixing Safari Flexbox Gap/
+/***********************/
+
+/***********************/
+/*Responding to Phones 375px and above/
+/***********************/
+
+@media (max-width: 23.4375em) {
+  .main-cta-container {
+    width: 90%;
+    padding: 1rem 1rem;
+    /*border-radius: 5px;*/
+    /*transform: translate(-50%);*/
+  }
+
+  .hero-btns {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn-hero {
+    width: fit-content;
+    font-size: 2rem;
+  }
+}
+
+/***********************/
+/*Responding to Phones 320px and above/
+/***********************/
+
+@media (max-width: 20em) {
+  /*Fixed CTA*/
+
+  .main-cta-container {
+    width: 90%;
+    padding: 1rem 1rem;
+    /*border-radius: 5px;*/
+    /*transform: translate(-50%);*/
+  }
+
+  .hero-btns {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn-hero {
+    width: fit-content;
+    font-size: 2rem;
+  }
+
+  /*Feature IMG Box*/
+
+  /*Feature Right Box*/
+
+  .feature-headline {
+    font-size: 3.5rem;
+  }
+
+  .feature-description {
+    font-size: 2rem;
+  }
+
+  .numbers-boxes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .numbers-description {
+    font-size: 2rem;
+  }
+}

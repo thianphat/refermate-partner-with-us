@@ -1,0 +1,248 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+Body Font Weights - Aeonik //
+UltraLight: 100
+Thin: 200
+Light: 300
+Default: 400
+Medium: 500
+Bold: 700
+Black: 900
+
+Titles & Buttons - Made Okine Sans//
+Thin: 200
+Light: 300
+Default: 400
+Medium: 500
+Bold: 700
+Black: 900
+
+- Line Heights:
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph Default: 1.06
+Large: 1.8
+
+- Letter Spacing
+ - 0.5px
+ - 0.75px
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLORS
+
+- Primary: #e67e22
+ -- maketintsandshades.com
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+#45260a
+- Shades:
+- Accents:
+- Greys:
+#888
+#767676 (lightest grey allowed on #fff)
+#555,
+#333,
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#aaa
+
+--- 03 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 04 BORDER RADIUS
+
+- Default: 5px
+- Medium: 12px;
+
+--- 05 WHITE SPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 06 ANIMATION TIMES
+
+- Normal 0.3s
+- Larger 0.4s
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*font-size: 10px;*/
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* 8px / 16px = 0.50 */
+  /* Percentage of user's browser font-size setting */
+  font-size: 50%;
+  /*For mobile menu transition effect slide in*/
+  /* Does not work on Safari nor Microsoft Edge*/
+  /*scroll-behavior: smooth;*/
+}
+
+body {
+  font-family: "Aeonik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #555;
+  /*only works if there is nothing absolutely positioned in relation to body.*/
+  /*background-color: #fafbfd;*/
+  background: #fcfdfe;
+  /*min-height: 100vh;*/
+}
+
+.measure {
+  height: var(--height);
+}
+
+/***********************/
+/*GENERAL RE-USABLE COMPONENTS*/
+/***********************/
+
+/*.grid:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*.grid:not(:last-child) {*/
+/*  margin-bottom: 9.6rem;*/
+/*}*/
+
+.grid--2-cols {
+  grid-template-columns: 1.1fr 1.9fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--3-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-decoration: none;
+  /* Always put transition in the original state 0.3s is usually always used.*/
+  /*transition: background-color 0.3s;*/
+  /*transition: all 0.3s;*/
+
+  /* Only necessary for .btn itself */
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  /*color: #555;*/
+  /*  Trick to add border inside */
+  box-shadow: 0 1px 0 1px #333;
+}
+
+.main-nav-links.nav-cta:hover,
+.main-nav-links.nav-cta:active {
+  box-shadow: 0 1px 0 1px #333;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+ul {
+  display: flex;
+  /*align-items: center;*/
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: normal;
+}
+
+/* HELPER/SETTINGS CLASSES*/
+
+.max-width {
+  max-width: 240rem;
+  /*margin: 0 auto;*/
+}
+
+.center {
+  /* 1200px */
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  /*margin-bottom: 9.6rem;*/
+}
+
+.hero-row {
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  height: 140px;
+  background-repeat: repeat-x;
+  background-position: center left 0;
+  background-size: auto 100%;
+  opacity: 0.2;
+}
+
+@keyframes marquee {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -1190px;
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    background-position: -1190px;
+  }
+
+  100% {
+    background-position: -0;
+  }
+}
+
+@keyframes marquee-text {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
